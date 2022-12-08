@@ -1,0 +1,10 @@
+2 - HTML5 Tags
+
+1.html5 Basics
+2.Headings and Paragraphs
+3.Text Formatting
+4.Links in html5
+5.html5 Nested Links
+6.html5 Lists
+7.Working with Images
+8.Tables in html5
