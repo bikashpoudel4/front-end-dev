@@ -1,0 +1,8 @@
+Website Structure
+    - Creating the Header
+    - Creating nav menu
+    - creating the banner
+    - Adding content to the page
+    - Creating the slide banner
+    - Building Page Footer
+    - Adding Copyright
