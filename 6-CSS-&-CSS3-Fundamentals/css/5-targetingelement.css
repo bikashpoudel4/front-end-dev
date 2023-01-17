@@ -1,0 +1,38 @@
+div{
+    width: 500px;
+    height: auto;
+}
+p{
+    color: brown;
+    font-style: italic;
+}
+
+/* by id # */
+#box{
+    width: 500px;
+    height: auto;
+    background: rebeccapurple;
+}
+
+/* by class . */
+.box-text{
+    color: aliceblue;
+    font-style: italic;
+}
+
+/* by nesting element to target */
+
+/* div#box > p{
+    color: teal;
+} */
+
+div#box > .simple-text{
+    color: red;
+    font-style: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div#box > p > span{
+    font-weight: bold;
+    color: black;
+}

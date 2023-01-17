@@ -1,0 +1,10 @@
+div{
+    margin: 25px;
+    padding: 15px;
+    border: 2px solid orange;
+    background-color: crimson;
+    color: azure;
+    width: 450px;
+    height: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
