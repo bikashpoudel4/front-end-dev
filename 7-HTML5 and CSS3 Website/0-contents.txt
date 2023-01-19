@@ -1,0 +1,17 @@
+HTML5 and CSS3 Website
+
+    - Building The Container
+    - Building the website Header
+    - Creating the Nav Bar
+    - Making Drop-Down Menu
+    - Creating Image Slider
+    - Making Content Holder
+    - Creating Sidebar
+    - Making Footer
+    - Creating About us Page
+    - Creating Services Pages
+    - Building the products Page
+    - Building Contact Page
+    - Adding Nav-Menu
+    - Responsive Design RWD Explained
+    - Animation with CSS3
