@@ -1,0 +1,12 @@
+body{
+    /* setting margin to 0  and left right as auto*/
+    margin: 0 auto;
+    background-color: #94949b;
+}
+
+.container{
+    width: 1000px;
+    height: auto;
+    background-color: whitesmoke;
+    margin: auto;
+}

@@ -1,0 +1,28 @@
+body{
+    /* setting margin to 0  and left right as auto*/
+    margin: 0 auto;
+    background-color: #94949b;
+}
+
+.container{
+    width: 1000px;
+    height: auto;
+    background-color: whitesmoke;
+    margin: auto;
+}
+
+/* Header */
+.logo{
+    float: left;
+    padding: 15px;
+}
+
+.search{
+    float: right;
+    padding: 15px;
+}
+
+/* to clear floating of logo and search */
+.clearfix{
+    clear: both;
+}
