@@ -5,3 +5,6 @@ Covering up front-end development from beginners to intermediate level. There ar
 React Angular 
 ....
 figma
+mobile app design 
+website design
+auto code
