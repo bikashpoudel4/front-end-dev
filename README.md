@@ -8,10 +8,3 @@ figma
 mobile app design 
 website design
 auto code
-
-
-zkfjjshf
-fskdjfhjksd
-sakfjghj
-sdfgsdfgfdg
-sdfgsdfg
