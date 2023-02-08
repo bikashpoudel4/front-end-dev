@@ -1,0 +1,55 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+
+    /* Calling animation */
+    animation-name: runMe;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    top: 10px;
+}
+/* animation */
+@keyframes runMe{
+
+    /* animation starts from
+    from{
+        background-color: red;
+    } */
+
+    /* animation ends to
+    to{
+        background-color: blue;
+    }  */
+
+    /* Using Percent */
+    0%{
+        left: 10px;
+        top: 10px;
+    }
+    25%{
+        left: 210px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        transform: rotate(90deg);
+        background-color: blue;
+    }
+    50%{
+        left: 210px;
+        top: 210px;
+    }
+    75%{
+        left: 10px;
+        top: 210px;
+        width: 50px;
+        height: 50px;
+        transform: rotate(90deg);
+        background-color: yellow;
+    }
+    100%{
+        left: 10px;
+        top: 10px;
+    }
+}
