@@ -9,3 +9,4 @@ JavaScript Getting Started
 @@@ Important
 -- JavaScript is a case-sensitive
 -- it is not white space sensitive
+-- It is recomended to put javascript in the footer section

@@ -1,0 +1,9 @@
+JavaScript - Fundamentals
+
+    - Variables in JavaScript
+    - Conditions in JavaScript
+    - Operators in JavaScript
+    - Working with Browser Console
+    - Loops in JavaScript
+    - Functions in JavaScript
+    - Creating custom Loops with Functions
