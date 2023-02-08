@@ -1,0 +1,11 @@
+JavaScript Getting Started
+
+    - Introduction to JavaScript
+    - What we should know
+    - Hello World
+    - JavaScript Statements
+    - Placements in JavaScript
+
+@@@ Important
+-- JavaScript is a case-sensitive
+-- it is not white space sensitive
