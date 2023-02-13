@@ -1,0 +1,4 @@
+Numbers in JavaScript
+
+    - All numbers are 64bit floating point numbers.
+    - 20 and 20.0 is the same in javascript
