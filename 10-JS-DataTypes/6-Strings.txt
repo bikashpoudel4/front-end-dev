@@ -1,0 +1,31 @@
+Strings in JavaScript
+
+    **Creation of Strings
+
+        -- var myString = "Simple String";
+        -- var myString = 'Simple String';
+
+    ** error creation of String
+        -- var myString = "I am" developer," and musician."; \\ to avoid this type of bug follow below steps
+        -- var myString = "I am\" developer\'s fine,\" and musician.";
+    
+String Properties and Methods
+
+    -- var phrase = "This is a simple phrase";
+       console.log(phrase.length); // 24 --Properties
+       console.log(phrase.toUpperCase()); // Method -- Method
+
+    -- var phrase = "This is a simple phrase";
+       var words = phrase.split(" ");
+
+indexOf a String
+    -- var phrase = "We want a groovy keyword";
+       var position = phrase.indexOf("groovy"); // 10
+       if not found will return -1
+       .lastIndexOf()
+
+Slice in String
+    -- var phrase = "Please read book";
+       var segment = phrase.slice(6, 5); // 6th position 5 letters starting from 0
+       .substring()    .substr()
+       "UPPER CASE letters are considered as less than lowercase letters"

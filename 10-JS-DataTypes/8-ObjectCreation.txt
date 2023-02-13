@@ -1,0 +1,38 @@
+Creating an Object 
+    -- ie
+            var player1={
+                name: "bikash",
+                score: 100,
+                rank: 1
+            };
+            player1.name
+            player1.score
+            player1.rank
+
+Object Oriented Programming with JavaScript
+
+    var player1 = {
+        name: "Ramesh",
+        score: 10,
+        rank: 20
+    };
+
+    var player2 = {
+        name: "Smith",
+        score: 500,
+        rank: 2
+    };
+
+    // applying oops concept
+
+    function playerDetails(){
+        // display info for each player1
+        console.log(this.name + "," + this.rank + "," + this .score);
+    }
+
+    player1.logDetails = playerDetails;
+    player2.logDetails = playerDetails;
+
+    player1.logDetails();
+    player2.logDetails();
+

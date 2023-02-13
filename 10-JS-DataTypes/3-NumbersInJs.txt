@@ -2,3 +2,49 @@ Numbers in JavaScript
 
     - All numbers are 64bit floating point numbers.
     - 20 and 20.0 is the same in javascript
+
+    **Addition vs Concatenation
+        - Addition is the addition of two numbers ie: 2 + 2 = 4 
+        - Concatenation is known as joinning ie: Aero + plane = Aeroplane
+        Example of Additions:
+            1.
+                var a = 5;
+                var b = 10;
+                console.log(a + b); // addition 15
+            
+        Example of Concatenation:
+            1.
+                var a = "5";
+                var b = "5";
+                console.log(a + b); //joining 55
+            
+            2.
+                var a = "5";
+                var b = 5
+                console.log(a + b); // joining 55
+    
+    **NaN type(Not a Number)
+        var a = "Five";
+        var b = 5
+        console.log(a + b); // NaN
+    
+    To convert NaN into Number
+        var a = "55"
+        var myNumber = Number(a); // try to convert to a number
+
+        // If you still get NaN
+        if(isNaN(myNumber)){
+            console.log("its not a number);
+        }
+    
+    **Using Math Object
+        1. round
+            var x = 200.6;
+            var y = Math.round(x); // 201
+        
+        2. max, min, PI, random, sqrt, log
+            var a = 10, b = 20, c = 30;
+
+            var biggestNumber = Math.max(a, b, c);
+            var smallNumber = Math.min(a, b, c);
+            
