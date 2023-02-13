@@ -1,0 +1,7 @@
+Creating Arrays
+
+    1. Hold multiple values
+        var someData = ["one", "two", "three", "four"];
+    
+    2. 0 based index
+        var someData = new Array("one", "Two", "Three")

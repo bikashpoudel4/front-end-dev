@@ -7,3 +7,26 @@ JavaScript - Fundamentals
     - Loops in JavaScript
     - Functions in JavaScript
     - Creating custom Loops with Functions
+
+##### IMPORTANT ######
+a = 5
+b = 10
+
+ASSIGNMENT OPERATOR =
+1.  if(a = b)
+    {
+        //True
+    }
+    -- This means value of B is now changed to A i.e.  a = 5 passes and becomes b = 5
+
+COMPARISON OPERATOR ==
+2.  if(a == b)
+    {
+        //False
+    }
+    -- This means the answer will be False because A is not equal to B
+    == In double equals sign we are checking the values are same or not.
+
+
+
+=== checks the value strictly

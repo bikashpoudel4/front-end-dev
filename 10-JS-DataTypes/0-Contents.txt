@@ -1,0 +1,7 @@
+JavaScript Data Types
+
+    - Working with arrys
+    - Numbers in JavaScript
+    - Strings in JavaScript
+    - Working with Dates Object
+    - Objects in JavaScript
