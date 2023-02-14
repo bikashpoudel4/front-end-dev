@@ -1,0 +1,30 @@
+** What is an Event?
+    - Events are already happening
+        -- When a page is loaded its an Event
+        -- Scrolling is an Event
+        -- Clicking or moving cursor is also an Event
+        -- Every keypress is an event
+
+** Some Basic Event names:
+    - Onload
+    - Onclick
+    - Onmouseover
+    - Onblur
+    - onfocus
+
+** Handling Events
+    - eg:
+        -FIRST METHOD which is not popular and not pratciced
+            -- <button onclick="alert('Hello World');"> Click </button>
+        
+        - SECOND METHOD = pratciced
+            element.event =
+            window.onload
+            nameField.onblur
+
+            myElement.onclick = function(){
+                // do Something
+            };
+        
+        - THIRD METHOD = pratciced
+            document.addEventListner('clicl', myFunction, false);

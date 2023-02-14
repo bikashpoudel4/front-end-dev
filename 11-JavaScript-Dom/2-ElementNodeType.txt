@@ -1,0 +1,8 @@
+Element Node Types
+
+
+** Get and Element Node
+    - The Object has to be unique
+    - Use : document.getElementById("some_id");
+    - Use: document.getElementsByTagName("a");
+    - .nodeType     .innerHTML

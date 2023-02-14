@@ -1,0 +1,32 @@
+** What is DOM?
+    - Document Object Model
+    - Everything inside a page object
+
+
+** What can you do with DOM?
+    - Get the <title> text
+    - Get second paragraph
+    - Set CSS
+    - Get names of <tags>
+    - Get all <li> elements in a <ul> list
+    - Move an image position
+    - Add some click functionality
+    - Create new elements
+
+** Nodes and Elements
+-Basically three types of nodes: ie,
+    - Node.ELEMENT_NODE == 1
+    - Node.ATTRIBUTE_NODE == 2
+    - Node.TEXT_NODE == 3
+
+        -- For Example
+            <ul id="something">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ul>
+
+                    -- in the above example code,
+                       - ELEMENT_NODE = <ul></ul> 
+                       - ATTRIBUTE_NODE = <id="something">
+                       - TEXT_NODE = One, Two, Three
