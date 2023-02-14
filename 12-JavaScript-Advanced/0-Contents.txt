@@ -1,0 +1,9 @@
+JavaScript Advance
+    - Debugging in JavaScript
+    - Creating Modern Live Validation Forms
+    - Minify and Validate JavaScript
+    - Using JavaScript Libraries
+    - Working with Modern JavaScript
+    - Making Use of Use Strict
+    - JavaScript Bad Practices
+    - JavaScript Regular Expressions

@@ -1,0 +1,23 @@
+HTML5 Main Features
+
+    - Audio
+    - Video
+    - Canvas Element
+    - Offline Storage
+    - New form Elements
+    - Drag and drop
+    - Geolocation
+    - Local Storage
+
+** HTML5 Video
+ - If working with HTML5 Video
+    - .play();
+    - .pause();
+    - .currentTime=0;
+
+    <video id="myVideo" width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>
+
+    -- We can use id="myVideo" and can be used as .play(); etc methods.
