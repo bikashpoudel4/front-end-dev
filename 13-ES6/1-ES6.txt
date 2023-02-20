@@ -1,0 +1,6 @@
+What's new in ES6 ?
+- New variable declaration like let and const
+- New functions with parameters and => functions
+- Classes
+- Template strings
+- New ways to deal to arrays and objects

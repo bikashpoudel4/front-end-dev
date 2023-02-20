@@ -1,0 +1,9 @@
+Transpiling ES6
+    - Many browsers still do not support ES6
+    - So we need to convert the ES6 code to ES5
+    - This is called Transpiling
+    - Used in typeScript
+    - Babel.js(Popular)
+
+
+we use transpilir to convert ES6 to ES5

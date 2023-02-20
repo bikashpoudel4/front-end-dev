@@ -1,0 +1,5 @@
+Babel.js
+    - Popularin Transpiling ES6 code
+    - We add ES6 code and get ES5 code as output
+    - Created by Sebastian McKenzie now works at facebook
+    - Used in React

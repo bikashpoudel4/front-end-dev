@@ -1,0 +1,16 @@
+## ES6 is also known as ECMA Script 6
+
+    - Learn to use ES6 new features
+    - Specifics about ES6
+    - What it includes
+    - New Keywords
+    - New operators
+    - New functions and object syntax
+    - Manage scope and readability
+    - Class syntax in ES6
+
+
+Before starting ES6, you should have knowledge of folowings:
+    - HTML and HTML5
+    - CSS and CSS3
+    - JavaScript
