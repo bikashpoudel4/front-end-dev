@@ -1,0 +1,14 @@
+ES6 Fundamentals
+
+    - Let Syntax in ES6
+    - Using Const Keyword
+    - Working with Template Strings
+    - Spread Operator in JavaScript ES6
+    - Default Function Parameters in ES6
+    - Working with Object Literals in ES6
+    - Arrow Functions in JavaScript ES6
+    - Arrow Functions with This Scope in ES6
+    - Destructuring in JavaScript ES6
+    - Generators in JavaScript ES6
+    - Working with Class Syntax in JavaScript ES6
+    - Class Inheritance in JavaScript ES6
