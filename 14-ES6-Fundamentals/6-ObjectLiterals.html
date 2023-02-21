@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spread Operator</title>
-    <!-- Java script -->
+    <title>Default Function Paramater</title>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
-        
-        var mobiles = ["LG", "Apple", "Samsung"];
-        var homeElectronics = ["Tv", "Fridge", "Speaker"];
-
-        var electronics = ["Laptops", ...mobiles, "desktops", ...homeElectronics, "Tablets"];
-        console.log(electronics);
+      
+      var sounds ={
+        alram(times){
+            console.log("Beep".repeat(times));
+        },
+        ringtone(times){
+            console.log("Songs".repeat(times));
+        }
+      }
+      console.log(sounds.alram(3));
+      console.log(sounds.ringtone(5));
 
     </script>
-    <!-- Java script -->
-
 </head>
 <body>
+
 </body>
+
 </html>
