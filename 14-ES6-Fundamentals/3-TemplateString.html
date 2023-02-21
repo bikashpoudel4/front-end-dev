@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template String</title>
+    <!-- Java script -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+        
+        // EXAMPLE 1----------------------------------------
+        // function printMyName(firstName)
+        // {
+        //     // ex 1
+        //     console.log("Welcome" + firstName);
+        //     // ex 2
+        //     console.log(`Welcome ${firstName}`);
+        // }
+        // printMyName("Bikash Poudel");
+
+
+        // EXAMPLE 2-----------------------------
+        function sendEmail( firstName, purchasePrice )
+        {
+            var shipping = 40;
+            console.log(
+                `Hi, ${firstName}, Thanks for visiting us.
+                                    Total: $${purchasePrice}
+                                    Shipping Price: $${shipping}
+                                    Grand Total: $${purchasePrice + shipping}`
+            );
+        }
+        sendEmail("Bikash", 300);
+
+    </script>
+    <!-- Java script -->
+</head>
+
+<body>
+
+
+</body>
+
+</html>
