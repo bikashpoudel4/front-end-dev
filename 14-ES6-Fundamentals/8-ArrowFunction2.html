@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function 2</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        var person = {
+            first: "Bikash",
+            actions: ["Bike", "Trek", "Nature", "Camera"],
+            printActions(){
+                this.actions.forEach(action => {
+                    var str = this.first + "Likes to" + action;
+                    console.log(str);
+                });
+            }
+        }
+        person.printActions();
+
+    </script>
+</head>
+<body>
+<h1>Arrow Function With This Scope.</h1>
+</body>
+
+</html>
