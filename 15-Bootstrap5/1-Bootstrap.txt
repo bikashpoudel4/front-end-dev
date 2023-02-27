@@ -1,4 +1,4 @@
--What is Bootstrap?
+- What is Bootstrap?
     -- Popular CSS Framework
     -- Completely Free
     -- Highly Customizable
@@ -7,7 +7,7 @@
     -- Built-in Components
     -- Can be Extended
 
-What's in Bootstrap 5?
+- What's in Bootstrap 5?
     -- jQuery Removed
     -- Switched to Vanilla JavaScript
     -- Custom font sizes
@@ -15,3 +15,9 @@ What's in Bootstrap 5?
     -- Change in Gutter Width
     -- New Icon Library
     -- Class Updates
+
+- What we need?
+    -- HTML and CSS
+    -- Windows/ linux/ mac
+    -- Android phone
+    -- Browsers
