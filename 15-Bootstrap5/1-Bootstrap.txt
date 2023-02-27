@@ -1,0 +1,17 @@
+-What is Bootstrap?
+    -- Popular CSS Framework
+    -- Completely Free
+    -- Highly Customizable
+    -- Responsive Grid System
+    -- Responsive Media Items 
+    -- Built-in Components
+    -- Can be Extended
+
+What's in Bootstrap 5?
+    -- jQuery Removed
+    -- Switched to Vanilla JavaScript
+    -- Custom font sizes
+    -- Dropped Support or IE 10, IE 11
+    -- Change in Gutter Width
+    -- New Icon Library
+    -- Class Updates
