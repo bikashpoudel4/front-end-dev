@@ -3,4 +3,5 @@ Breakpoints
     -- Breakpoints are Media Queries
     -- Building Block of RWD
     -- Mobile First
-    -- 
+
+See BreakPoints.png
