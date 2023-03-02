@@ -1,0 +1,10 @@
+** Grid Options
+
+    GRID OPTIONS    |   CLASS PREFIX
+
+    Extra Small         xs
+    Small               sm
+    Medium              md
+    Large               lg
+    Extra Large         xl
+    Extra Extra Large   xxl   
