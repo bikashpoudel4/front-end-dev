@@ -1,0 +1,6 @@
+** Gutters
+    1rem = 16px
+    -- Gutters are Gabs between columns
+    -- Padding Right and Left
+    -- Gutters start at 1.5rem(24px) wide or(SIZE)
+    -- Gutters can be adjusted
