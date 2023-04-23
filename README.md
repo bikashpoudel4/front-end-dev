@@ -7,6 +7,7 @@ Covering up front-end development from beginners to intermediate level. There ar
 
 ggfhfgh
 xvcvxc
+fgdfgdf
 
 BUGS
 -destructuring with function
