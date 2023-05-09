@@ -4,7 +4,6 @@ Covering up front-end development from beginners to intermediate level. There ar
 
 #Usefull to see and know about
  - html, CSS, JavaScript minifier
-fdgfjfhjgfhjfghj
 
 BUGS
 -destructuring with function
