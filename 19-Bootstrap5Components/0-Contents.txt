@@ -20,3 +20,21 @@ Bootstrap5 Components
     - Carousel Fade Effect
     - Carousel Timing
     - Disable Carousel Touch Swiping
+    - Carousel Dark Variant
+    - Close Button
+    - Collapse
+    - Horizontal Collapse
+    - Multiple Targets
+    - Dropdowns
+    - Split Button
+    - Dropdown Sizing
+    - Dark Dropdowns
+    - Dropdown Directions
+    - Dropup and Dropdown Alignment
+    - Menu Items
+    - Menu Alignment
+    - Dropdown Alignment Options
+    - Menu Contents
+    - Dropdown Forms
+    - Dropdown Options
+    - Dropdown Auto Close
