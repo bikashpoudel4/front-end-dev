@@ -39,4 +39,41 @@ Bootstrap5 Components
     - Dropdown Options
     - Dropdown Auto Close
     - List Group
-    - List Group Links and Buttons - 184
+    - List Group Links and Buttons
+    - List Group Flush
+    - Numbered List
+    - Horizontal List Group
+    - Contextual List Group Classes
+    - List Group with Custom Content
+    - List Group Checkboxes and Radios
+    - List Group JavaScript Tabs
+    - Modals
+    - Static Backdrop
+    - Scrolling Long Content
+    - Vertically Centered
+    - Modal Tooltips and Popovers
+    - Using Grid system in Modal
+    - Varying Modal Content
+    - Toggle Between Modals
+    - Optional Modal Sizes
+    - Navbar
+    - The all new bg-body-tertiary
+    - Navigation Links
+    - Navbar Dropdown
+    - Navbar Nested Dropdown
+    - Navbar Forms
+    - Navbar Input Group
+    - Navbar Plain Text
+    - Navbar Colors
+    - The Navbar Dark-Mode
+    - Navbar Colors
+    - Navbar Containers
+    - Navbar Placement
+    - Navbar Scrolling
+    - Off Canvas Navbar
+    - Navs and Tabs
+    - Nav Flex Utilities
+    - Nav Tabs abd Pils with Dropdown
+    - Tabs and pills Behaviours
+    - Offcanvas In-Depth
+    - Offcanvas Dark-Mode 
