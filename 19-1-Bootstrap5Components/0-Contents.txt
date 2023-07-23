@@ -1,0 +1,79 @@
+Bootstrap5 Components
+    - Accordions
+    - Alerts
+    - Dismissing Alerts
+    - Badges
+    - Breadcrumb
+    - Buttons
+    - Button Group
+    - Button Toolbar
+    - Button Group Alteration
+    - Card
+    - Card Sizing
+    - Card Navigation
+    - Card Images
+    - Card Styles
+    - Carousel
+    - Carousel Controls
+    - Carousel Indicators
+    - Carousel Caption
+    - Carousel Fade Effect
+    - Carousel Timing
+    - Disable Carousel Touch Swiping
+    - Carousel Dark Variant
+    - Close Button
+    - Collapse
+    - Horizontal Collapse
+    - Multiple Targets
+    - Dropdowns
+    - Split Button
+    - Dropdown Sizing
+    - Dark Dropdowns
+    - Dropdown Directions
+    - Dropup and Dropdown Alignment
+    - Menu Items
+    - Menu Alignment
+    - Dropdown Alignment Options
+    - Menu Contents
+    - Dropdown Forms
+    - Dropdown Options
+    - Dropdown Auto Close
+    - List Group
+    - List Group Links and Buttons
+    - List Group Flush
+    - Numbered List
+    - Horizontal List Group
+    - Contextual List Group Classes
+    - List Group with Custom Content
+    - List Group Checkboxes and Radios
+    - List Group JavaScript Tabs
+    - Modals
+    - Static Backdrop
+    - Scrolling Long Content
+    - Vertically Centered
+    - Modal Tooltips and Popovers
+    - Using Grid system in Modal
+    - Varying Modal Content
+    - Toggle Between Modals
+    - Optional Modal Sizes
+    - Navbar
+    - The all new bg-body-tertiary
+    - Navigation Links
+    - Navbar Dropdown
+    - Navbar Nested Dropdown
+    - Navbar Forms
+    - Navbar Input Group
+    - Navbar Plain Text
+    - Navbar Colors
+    - The Navbar Dark-Mode
+    - Navbar Colors
+    - Navbar Containers
+    - Navbar Placement
+    - Navbar Scrolling
+    - Off Canvas Navbar
+    - Navs and Tabs
+    - Nav Flex Utilities
+    - Nav Tabs abd Pils with Dropdown
+    - Tabs and pills Behaviours
+    - Offcanvas In-Depth
+    - Offcanvas Dark-Mode - 222
