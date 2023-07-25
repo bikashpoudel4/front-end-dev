@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu Alignment</title>
+    <title>Menu Contents</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <!-- icons bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -23,9 +23,10 @@
                        class="btn btn-secondary dropdown-toggle"
                        data-bs-toggle="dropdown"
                        aria-expanded="false">
-                    Right-aligned menu
+                    Default Dropdown
                     </button>
                     <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">Dropdown Header</h6></li>
                         <li><button class="dropdown-item" type="button">One</button></li>
                         <li><button class="dropdown-item" type="button">Two</button></li>
                         <li><button class="dropdown-item" type="button">Three</button></li>
@@ -41,34 +42,16 @@
                        type="button"
                        class="btn btn-secondary dropdown-toggle"
                        data-bs-toggle="dropdown"
-                       aria-expanded="false"
-                       data-bs-display="static">
-                    Right-aligned menu
+                       aria-expanded="false">
+                    Default Dropdown
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-md-end">
+                    <ul class="dropdown-menu">
+                        <li><h6 class="dropdown-header">Dropdown Header</h6></li>
                         <li><button class="dropdown-item" type="button">One</button></li>
                         <li><button class="dropdown-item" type="button">Two</button></li>
                         <li><button class="dropdown-item" type="button">Three</button></li>
-                    </ul>
-                </div>
-            </div>   
-        </div>
-
-        <div class="row justify-content-center mt-3">
-            <div class="col-md-8">
-                <div class="btn-group">
-                    <button
-                       type="button"
-                       class="btn btn-secondary dropdown-toggle"
-                       data-bs-toggle="dropdown"
-                       aria-expanded="false"
-                       data-bs-display="static">
-                    Right-aligned menu
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                        <li><button class="dropdown-item" type="button">One</button></li>
-                        <li><button class="dropdown-item" type="button">Two</button></li>
-                        <li><button class="dropdown-item" type="button">Three</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item" type="button">Four</button></li>
                     </ul>
                 </div>
             </div>   
