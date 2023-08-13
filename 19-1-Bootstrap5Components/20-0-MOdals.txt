@@ -1,0 +1,6 @@
+Modals
+    - Built with HTML, CSS and JavaScript
+    - Positioned on Top of Everything Else
+    - 1 Modal at a time
+    - Nested Modals are not supported
+    - Positioned to fixed
