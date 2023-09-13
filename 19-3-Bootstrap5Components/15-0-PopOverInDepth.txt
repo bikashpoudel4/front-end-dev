@@ -1,0 +1,4 @@
+Popovers
+    - Rely on 3rd Party Library
+    - Require Popover Plug-in
+    - Requires Manual Initialization
