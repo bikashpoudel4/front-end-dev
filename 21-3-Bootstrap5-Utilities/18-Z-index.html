@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visibility</title>
+    <title>Z index</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <!-- icons bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -14,11 +14,14 @@
 <body>
 
     <div class="container mt-3">
-        <div class="row justify-content-center mb-3 mt-5">
-            <div class="col-md-6">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
 
-                <div class="visible">Visible text</div>
-                <div class="invisible">InVisible text</div>
+                <div class="z-3 position-absolute p-5 rounded-3 text-bg-success border shadow ms-5 mt-5">One</div>
+                <div class="z-2 position-absolute p-5 rounded-3 text-bg-success border shadow ms-4 mt-4">Two</div>
+                <div class="z-1 position-absolute p-5 rounded-3 text-bg-success border shadow ms-3 mt-3">Three</div>
+                <div class="z-0 position-absolute p-5 rounded-3 text-bg-success border shadow ms-2 mt-2">Four</div>
+                <div class="z-n1 position-absolute p-5 rounded-3 text-bg-success border shadow ms-1 mt-1">Five</div>
 
             </div>
         </div>
