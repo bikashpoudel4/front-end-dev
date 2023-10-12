@@ -1,0 +1,28 @@
+Text Formatting Exercise
+Add an <h1> Heading:
+
+Create an <h1> (heading 1) element by adding <h1>My First Webpage</h1>. This creates a main heading for your webpage.
+
+Insert a Paragraph <p>:
+
+Below the <h1> element, insert a <p> (paragraph) element by adding <p>This is a <strong>bold</strong> and <em>italic</em> text in HTML.</p>. This paragraph contains both bold and italic text.
+
+Create an Unordered List <ul>:
+
+After the paragraph, create an unordered list using the <ul> (unordered list) tag. Add list items using <li> (list item) tags as follows:
+
+<ul>
+    <li>Item One</li>
+    <li>Item Two</li>
+    <li>Item Three</li>
+</ul>
+This creates an unordered list with three items.
+
+Include a Blockquote <blockquote>:
+
+After the list, insert a blockquote element using <blockquote> as shown:
+
+<blockquote>
+    "The only limit to our realization of tomorrow will be our doubts of today." -Franklin D. Roosevelt
+</blockquote>
+This blockquote contains a quote by Franklin D. Roosevelt.
