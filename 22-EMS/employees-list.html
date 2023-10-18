@@ -364,6 +364,77 @@
     </div>
 
     <!-- ADD Employee Modal -->
+
+    <!-- EMPLOYEE DETAILS MODEL -->
+    <div 
+    class="modal fade"
+    id="employee_details"
+    data-bs-backdrop="static"
+    tabindex="-1"
+    aria-hidden="true"
+    style="backdrop-filter: blur(5px);">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-bg-dark">
+                <h5 class="modal-title">Employee Details</h5>
+                <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <table class="table table-bordered small mb-0">
+                    <tr>
+                        <th class="w-50">ID</th>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>Employee ID</th>
+                        <td>255</td>
+                    </tr>
+                    <tr>
+                        <th>First Name</th>
+                        <td>Bikash</td>
+                    </tr>
+                    <tr>
+                        <th>Last Name</th>
+                        <td>Poudel</td>
+                    </tr>
+                    <tr>
+                        <th>Email ID</th>
+                        <td>bikashpoudel4@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <td>313554313</td>
+                    </tr>
+                    <tr>
+                        <th>Joining Date</th>
+                        <td>25th July 2023</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a 
+                    href="#" 
+                    class="btn btn-sm btn-warning"
+                    data-bs-toggle="#employee_edit">
+                    Edit Details
+                </a>
+                <a 
+                    href="#"
+                    class="btn btn-sm btn-primary"
+                    data-bs-toggle="modal"
+                    aria-label="Close">
+                    Close
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- EMPLOYEE DETAILS MODEL -->
     
     <!--From: https://getbootstrap.com/docs/5.3/getting-started/introduction/#cdn-links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
