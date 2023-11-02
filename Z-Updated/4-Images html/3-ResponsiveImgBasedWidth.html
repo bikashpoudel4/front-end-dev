@@ -1,0 +1,22 @@
+<!-- <picture>
+    <img src="https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg" alt="yak in the house" width="600px" height="auto">
+    <source srcset="https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg" media="(min-width: 960px)">
+    <source srcset="https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg" media="(min-width: 1280px)">
+    <source srcset="https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg" media="(min-width: 1920px)">
+</picture> -->
+
+<picture>
+    <img 
+        src="https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg" 
+        alt="yak in the house" 
+        width="600px" height="auto"
+        srcset="
+            https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg media=(min-width: 960px),
+            https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg media=(min-width: 1280px),
+            https://cdn.pixabay.com/photo/2023/10/23/05/54/cow-8335399_1280.jpg media=(min-width: 1920px),"
+        
+        sizes="
+            (mxn-width: 480px) 240px,
+            (max-width: 960px) 480px,
+            (max-width: 1280px) 960px, 1280px">
+</picture>
