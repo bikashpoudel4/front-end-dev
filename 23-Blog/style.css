@@ -6,3 +6,15 @@
     background-clip: text;
     color: transparent;
 }
+
+.banner-holder, .main-page-header{
+    /* background-image: url(./img/banner.jpg); */
+    background-image: url(img/banner4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    /* background-color: rgba(0, 0, 0, 0.89) */
+}
+
+.custom-nav{
+    backdrop-filter: blur(8px);
+}
