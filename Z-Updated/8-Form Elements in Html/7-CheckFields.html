@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="A Simple page">
+    <style>
+        label{
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="1Formsuccess.html" method="GET">
+
+        <!-- INPUT -->
+        <label for="e_name">Name:
+            <input name="e_name" id="e_name" type="text" required placeholder="Name">
+        </label>
+
+        <!-- EMAIL -->
+        <label for="e_email">Email:
+            <input name="e_email" id="e_email" type="email" required placeholder="Email@email.com">
+        </label>
+
+        <!-- PHONE -->
+        <label for="e_phone">Phone:
+            <input name="e_phone" id="e_phone" type="email" required placeholder="+45254643321">
+        </label>
+
+        <!-- PASSWORD -->
+        <label for="e_password">Password:
+            <input name="e_password" id="e_password" type="password" required placeholder="Password">
+        </label>
+
+        <!-- URL -->
+        <label for="e_url">Website:
+            <input name="e_url" id="e_url" type="url" required placeholder="https://instagram.com">
+        </label>
+
+        <!-- NUMBER -->
+        <label for="e_quantity">Quantity:
+            <input name="e_quantity" id="e_quantity" type="number" required>
+        </label>
+
+        <!-- DATE -->
+        <label for="e_date">Date:
+            <input name="e_date" id="e_date" type="date" required value="2025-05-02">
+        </label>
+
+        <!-- DATE isable -->
+        <label for="e_date">Date:
+            <input name="e_date" id="e_date" type="date" required value="2025-05-02" readonly>
+        </label>
+
+        <!-- DATE isable -->
+        <label for="e_date">Date:
+            <input name="e_date" id="e_date" type="date" required value="2025-05-02" disabled>
+        </label>
+
+        <!-- Time -->
+        <label for="e_time">Time:
+            <input name="e_time" id="e_time" type="time" required>
+        </label>
+
+        <!-- Month -->
+        <label for="e_month">Month:
+            <input name="e_month" id="e_month" type="month" required>
+        </label>
+
+        <!-- Week -->
+        <label for="e_week">Week:
+            <input name="e_week" id="e_week" type="week" required>
+        </label>
+
+        <!-- DATE TIME LOCAL -->
+        <label for="e_dtl">Date/Time/Local:
+            <input name="e_dtl" id="e_dtl" type="datetime-local" required>
+        </label>
+
+        <!-- Radio -->
+        <div>
+            <p>Select Gender:</p>
+        
+            <!-- Radiobuttons -->
+            <label for="e_male">
+                <input name="e_gender" id="e_male" type="radio" value="Male">
+                Male
+            </label>
+        
+            <label for="e_female">
+                <input name="e_gender" id="e_female" type="radio" value="Female">
+                Female
+            </label>
+        
+            <label for="e_other">
+                <input name="e_gender" id="e_other" type="radio" value="Other">
+                Other
+            </label>
+        
+            <label for="e_pnts">
+                <input name="e_gender" id="e_pnts" type="radio" value="Prefer not to say">
+                Prefer not to say
+            </label>
+        </div>
+
+        <!-- Check Fields -->
+        <div>
+            <p>Food Time Selection</p>
+            <label for="e_breakfast">
+                <input name="e_food" id="e_breakfast" type="checkbox" value="Breakfast">
+                Breakfast
+            </label>
+
+            <label for="e_lunch">
+                <input name="e_food" id="e_lunch" type="checkbox" value="Lunch">
+                Lunch
+            </label>
+
+            <label for="e_dinner">
+                <input name="e_food" id="e_dinner" type="checkbox" value="Dinner">
+                Lunch
+            </label>
+
+        </div>
+
+        <button type="submit">Sign up</button>
+    </form>
+
+</body>
+</html>
