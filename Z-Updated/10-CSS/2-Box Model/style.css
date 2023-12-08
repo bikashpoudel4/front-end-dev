@@ -1,0 +1,28 @@
+div {
+    width: 500px;
+    height: auto;
+    background-color: crimson;
+    display: inline;
+}
+
+span{
+    width: 500px;
+    height: auto;
+    background-color: blueviolet;
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul > li {
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    background-color: crimson;
+    color: whitesmoke;
+    padding: 15px;
+}
