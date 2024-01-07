@@ -1,4 +1,37 @@
-*{
+* {
     font-family: 'Quicksand', sans-serif;
     font-family: 'Rubik', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+.container{
+    width: 1000px;
+    height: auto;
+    margin: 10px auto;
+    background-color: white;
+    border: 1px solid gainsboro;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.1);
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.search-holder form > input[type="search"] {
+    border: 1px solid gainsboro;
+    padding: 10px;
+}
+
+.search-holder form > button[type="submit"] {
+    background-color: rgb(65, 44, 44);
+    color: white;
+    padding: 11px;
+    border: 0px;
+    margin-left: -5px;
 }
