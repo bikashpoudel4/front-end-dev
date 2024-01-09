@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+       body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgba(14, 69, 98, 0.82);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #5bc0de;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-button {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5bc0de;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #007bb5;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar.open ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar li {
+        margin: 0;
+        text-align: left;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.banner {
+    background: #007bb5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    width: calc(33.33% - 40px);
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#">SAARAS</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-button" onclick="searchButtonClick()">Search</button>
+        </div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <img src="https://cdn.pixabay.com/photo/2023/12/12/13/28/waterfall-8445292_1280.jpg" alt="Card Image">
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Card Image">
+            <div class="card-content">
+                <h3>Card 1</h3>
+                <p>This is a sample card content. You can customize it as needed.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Card Image">
+            <div class="card-content">
+                <h3>Card 2</h3>
+                <p>This is another sample card content. Customize it to suit your requirements.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Card Image">
+            <div class="card-content">
+                <h3>Card 3</h3>
+                <p>Yet another sample card content. Feel free to modify and adapt it.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById('navbar');
+            navbar.classList.toggle('open');
+        }
+
+        function searchButtonClick() {
+            // Add your search button click functionality here
+            alert('Search button clicked!');
+        }
+    </script>
+    </body>
+    </html>
+    

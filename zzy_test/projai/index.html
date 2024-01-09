@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #000; /* Solid Black */
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .logo {
+            font-family: 'Pacifico', cursive;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 15px;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #5bc0de;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .search-button {
+            padding: 8px 15px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #5bc0de;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: #007bb5;
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                background-color: #000; /* Solid Black */
+            }
+
+            .navbar a {
+                color: white;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .navbar ul {
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #000; /* Solid Black */
+                display: none;
+            }
+
+            .navbar.open ul {
+                display: flex;
+            }
+
+            .navbar li {
+                margin: 0;
+                text-align: center;
+                padding: 10px;
+            }
+
+            .navbar a {
+                display: block;
+            }
+
+            .hamburger div:nth-child(2) {
+                margin: 5px 0;
+            }
+
+            .banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 20px; /* Adjust the padding as needed */
+        background-color: #333; /* Dark background color for the banner */
+        color: white;
+        text-align: center;
+    }
+
+    .banner-content {
+        max-width: 600px; /* Adjust the max-width as needed */
+    }
+
+    .banner h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .banner p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .get-started-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #5bc0de;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .get-started-button:hover {
+        background-color: #007bb5;
+    }
+
+    .banner-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+
+    .banner-images img {
+        width: 80px; /* Adjust the image width as needed */
+        height: 80px; /* Adjust the image height as needed */
+        object-fit: cover;
+        border-radius: 50%;
+    }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#">SAARAS</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-button" onclick="searchButtonClick()">Search</button>
+        </div>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- New Banner Section -->
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Welcome to SAARAS</h1>
+            <p>Your trusted source for...</p>
+            <button class="get-started-button" onclick="getStartedButtonClick()">Get Started</button>
+        </div>
+        <div class="banner-images">
+            <!-- Add your small images here -->
+            <img src="https://cdn.pixabay.com/photo/2020/03/05/16/44/engineer-4904881_640.jpg" alt="Image 1">
+            <img src="https://cdn.pixabay.com/photo/2020/03/05/16/43/engineer-4904878_640.jpg" alt="Image 2">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+
+    <!-- <script>
+        function toggleNavbar() {
+            var navbar = document.getElementById('navbar');
+            navbar.classList.toggle('open');
+        }
+
+        function searchButtonClick() {
+            // Add your search button click functionality here
+            alert('Search button clicked!');
+        }
+    </script> -->
+</body>
+</html>

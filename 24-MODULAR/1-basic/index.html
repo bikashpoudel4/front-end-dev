@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/navigation.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <!-- Other head content -->
+</head>
+<body>
+
+  <!-- Include modular HTML components -->
+  <div class="container">
+    <!-- Header Component -->
+    <div id="header-container">
+      <!-- Include the content of header.html -->
+      <!-- You can use server-side includes or JavaScript to include the content -->
+      <!-- Example using JavaScript (for simplicity, consider using a build tool in a real project) -->
+      <script>
+        fetch('components/header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header-container').innerHTML = data;
+          });
+      </script>
+    </div>
+
+    <!-- Navigation Component -->
+    <div id="navigation-container">
+      <!-- Include the content of navigation.html -->
+      <script>
+        fetch('components/navigation.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navigation-container').innerHTML = data;
+          });
+      </script>
+    </div>
+
+    <!-- Main Content Goes Here -->
+
+    <!-- Footer Component -->
+    <div id="footer-container">
+      <!-- Include the content of footer.html -->
+      <script>
+        fetch('components/footer.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+          });
+      </script>
+    </div>
+  </div>
+
+  <!-- Other scripts or content -->
+</body>
+</html>

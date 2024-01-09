@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main Menu Styles */
+.main-menu {
+    background-color: #333; /* Adjust the background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Align items at the start and end of the flex container */
+    align-items: center;
+}
+
+/* Logo Holder Styles in Menu */
+.logo-holder-menu img {
+    height: 40px; /* Adjust the logo height */
+    width: 40px; /* Adjust the logo width */
+}
+
+/* Search Holder Styles in Menu */
+.search-holder-menu form {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+}
+
+.search-holder-menu input {
+    padding: 5px;
+    margin-right: 10px; /* Adjust the spacing between search input and button */
+    border: 1px solid #fff; /* Adjust the border color */
+    border-radius: 5px;
+}
+
+.search-holder-menu button {
+    padding: 6px 12px;
+    background-color: #fff; /* Adjust the button background color */
+    border: 1px solid #333; /* Adjust the border color */
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333; /* Adjust the button text color */
+}
+
+/* Main Menu List Styles */
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff; /* Adjust the text color */
+    font-weight: bold;
+    font-size: 16px; /* Adjust the font size */
+}
+
+.main-menu ul.drop {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Adjust the background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.main-menu li:hover > ul.drop {
+    display: block;
+}
+
+.main-menu ul.drop li {
+    display: block;
+}
+
+.main-menu ul.drop a {
+    padding: 10px;
+    font-size: 14px; /* Adjust the font size */
+}

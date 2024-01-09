@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+            font-size: 32px;
+            font-family: 'Lobster', cursive;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .search-bar {
+            display: flex;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .search-button {
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #45a049;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 3px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        li {
+            margin: 0 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .search-bar {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                width: 100%;
+            }
+
+            ul.show {
+                display: flex;
+            }
+
+            li {
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar" id="navbar">
+    <div class="logo">
+        <a href="#">SAARAS</a>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button class="search-button" onclick="searchButtonClick()">Search</button>
+    </div>
+    <div class="hamburger" onclick="toggleNavbar()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<script>
+    function toggleNavbar() {
+        var ul = document.querySelector('ul');
+        ul.classList.toggle('show');
+    }
+
+    function searchButtonClick() {
+        // Add functionality for search button click
+        alert('Search button clicked!');
+    }
+</script>
+
+</body>
+</html>

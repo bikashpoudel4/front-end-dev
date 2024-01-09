@@ -1,0 +1,28 @@
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff; /* Adjust the text color */
+    font-weight: bold;
+    font-size: 16px; /* Adjust the font size */
+}
+
+.main-menu ul.drop {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333; /* Adjust the background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
