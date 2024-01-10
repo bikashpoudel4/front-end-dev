@@ -220,12 +220,33 @@ body{
 }
 /* CONTACT PAGE */
 
+/* MOBILE MENU */
+.mobile-menu{
+    display: none !important;
+}
+/* MOBILE MENU */
 /* RESPONSIVE WEB DESIGN */
 @media screen and (max-width: 750px) {
     .main-header {
         display: flex;
         flex-direction: column;
         text-align: center;
+    }
+    .mobile-menu{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    .main-menu > ul:nth-of-type(2) {
+        flex-direction: column;
+        border-top: 1px solid gainsboro;
+    }
+    .drop{
+        display: block;
+        position: relative;
+    }
+    .drop > li > a {
+        display:block;
+        width: auto;
     }
 }
 /* RESPONSIVE WEB DESIGN */
