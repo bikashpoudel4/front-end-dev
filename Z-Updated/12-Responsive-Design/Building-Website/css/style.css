@@ -237,16 +237,33 @@ body{
         justify-content: space-between !important;
     }
     .main-menu > ul:nth-of-type(2) {
+        /* display: none; */
         flex-direction: column;
         border-top: 1px solid gainsboro;
     }
-    .drop{
+    /* .drop{
         display: block;
         position: relative;
-    }
+    } */
     .drop > li > a {
         display:block;
         width: auto;
+    }
+    #adaptive img{
+        width: 100%;
+    }
+    .content-holder{
+        flex-direction: column;
+    }
+    .content-holder .content,
+    .content-holder .sidebar{
+        width: auto;
+    }
+    .footer-widget-holder{
+        flex-direction: column;
+    }
+    .footer-widget-holder .footer-widget{
+        padding: 10px 25px;
     }
 }
 /* RESPONSIVE WEB DESIGN */
