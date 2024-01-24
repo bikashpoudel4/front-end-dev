@@ -2,7 +2,6 @@ import './App.css';
 
 
 function Header(props){
-    console.log(props);
     return (
         <header>
             <h1>{props.name}</h1>
@@ -14,6 +13,9 @@ function Main(props){
     return (
         <main>
             <p>Best Books to learn {props.adjective}.</p>
+            <ul>
+                {props.geners.map((gener) => (<li key={gener.id}>{gener.title}</li>))}
+            </ul>
         </main>
     )
 }
@@ -26,11 +28,25 @@ function Footer(props){
     )
 }
 
+const geners = [
+    "Adventure",
+    "Biography",
+    "Travel",
+]
+
+const generObjects = geners.map((gener, gener_id) => (
+    {
+        id : gener_id,
+        title: gener
+    }
+));
+console.log(generObjects);
+
 function App() {
   return (
     <div className="App">
       <Header name="My Writings"/>
-      <Main adjective="adventure"/>
+      <Main adjective="adventure" geners={generObjects}/>
       <Footer year={new Date().getFullYear()}/>
     </div>
   );
