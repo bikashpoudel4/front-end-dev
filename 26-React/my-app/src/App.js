@@ -1,26 +1,27 @@
 import './App.css';
 
 
-function Header(){
+function Header(props){
+    console.log(props);
     return (
         <header>
-            <h1>Study Books</h1>
+            <h1>{props.name}</h1>
         </header>
     )
 }
 
-function Main(){
+function Main(props){
     return (
         <main>
-            <p>Best Books to learn and get knowledge.</p>
+            <p>Best Books to learn {props.adjective}.</p>
         </main>
     )
 }
 
-function Footer(){
+function Footer(props){
     return(
         <footer>
-            <p>CopyRight &copy; 2024</p>
+            <p>CopyRight &copy; {props.year}</p>
         </footer>
     )
 }
@@ -28,9 +29,9 @@ function Footer(){
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main/>
-      <Footer />
+      <Header name="My Writings"/>
+      <Main adjective="adventure"/>
+      <Footer year={new Date().getFullYear()}/>
     </div>
   );
 }
