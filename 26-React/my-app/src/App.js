@@ -1,53 +1,24 @@
 import "./App.css";
-import img_bird from "./images/bird.jpg";
 
-function Header(props) {
-    return (
-        <header className="header-styles">
-            <h1>{props.name}</h1>
-        </header>
-    );
+
+function SecretComponent(){
+    return(
+        <h1>Information for Authorized Users Only.</h1>
+    )
 }
 
-function Main(props) {
+function RegularComponent(){
     return (
-        <main>
-            <p>Best Books to learn {props.adjective} book.</p>
-            <img src={img_bird} height={200} alt="bird"/>
-            {/* <img src="https://github.com/bikashpoudel4.png" height={200}/> */}
-            <ul>
-                {props.geners.map((gener) => (
-                    <li key={gener.id}>{gener.title}</li>
-                ))}
-            </ul>
-        </main>
-    );
+        <h1>Regular Info which everyone can see.</h1>
+    )
 }
 
-function Footer(props) {
-    return (
-        <footer>
-            <p>CopyRight &copy; {props.year}</p>
-        </footer>
-    );
-}
-
-const geners = ["Adventure", "Biography", "Travel"];
-
-const generObjects = geners.map((gener, gener_id) => ({
-    id: gener_id,
-    title: gener,
-}));
-console.log(generObjects);
-
-function App() {
-    return (
-        <div className="App">
-            <Header name="My Writings" />
-            <Main adjective="adventure" geners={generObjects} />
-            <Footer year={new Date().getFullYear()} />
-        </div>
-    );
+function App(props) {
+    return(
+        <>
+        {props.authorized ? <SecretComponent/> : <RegularComponent/>}
+        </>
+    )
 }
 
 export default App;

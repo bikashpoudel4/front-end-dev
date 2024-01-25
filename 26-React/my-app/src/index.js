@@ -5,17 +5,13 @@ import './index.css';
 import App from "./App";
 
 
-function AppTwo() {
-    return (
-        <h1> This is a second App.</h1>
-    )
-}
+const [, , third] = ["Book", "Pen", "Calculator", "Ruler"];
+console.log(third);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <>
-        <App />
-        <AppTwo />
+        <App authorized={false}/>
     </>,
 );
 
