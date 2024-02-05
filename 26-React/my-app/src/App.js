@@ -1,20 +1,22 @@
 import "./App.css";
-import React, { useReducer } from "react";
+import { Routes, Route } from "react-router-dom";
+import { Home, About, Products, Contact , Error404} from "./pages";
+import React from "react";
 
 
-function App() {
-
-    const [checked, toggle] = useReducer(
-        (checked) => !checked,
-        false
-    );
-    
+function App() {   
     return(
-        <>
-            <input type="checkbox" value={checked} onChange={toggle} />
-                <p>{checked ? "checked" : "Not Checked"}</p>
-        </>
-    )
+        <div>
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/about" element={<About/>} />
+                <Route path="/products" element={<Products/>} />
+                <Route path="/contact" element={<Contact/>} />
+                <Route path="*" element={<Error404/>} />
+            </Routes>
+        </div>
+    );
 }
+
 
 export default App;
