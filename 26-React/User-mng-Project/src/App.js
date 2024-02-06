@@ -1,7 +1,9 @@
+import { BsFillCalendar2CheckFill } from "react-icons/bs";
+
 function App() {
   return (
     <div className="App">
-      <h1>Appointments</h1>
+      <h1><BsFillCalendar2CheckFill/>Appointments</h1>
     </div>
   );
 }
