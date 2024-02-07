@@ -1,0 +1,23 @@
+[
+    {
+        "id": 0,
+        "firstName": "John",
+        "lastName": "Doe",
+        "aptDate": "2024-12-15 11:00",
+        "aptNotes": "Hi, I need Doctor!"
+    },
+    {
+        "id": 1,
+        "firstName": "Bikash",
+        "lastName": "Poudel",
+        "aptDate": "2024-11-05 15:30",
+        "aptNotes": "Hi, I need Computer!"
+    },
+    {
+        "id": 2,
+        "firstName": "Papa",
+        "lastName": "Freeman",
+        "aptDate": "2024-09-30 09:15",
+        "aptNotes": "Hi, I need to consultant!"
+    }
+]

@@ -1,8 +1,9 @@
 import { BsFillCalendar2CheckFill } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 import Search from "./components/Search";
+import AddAppoinment from "./components/AddAppoinment";
 
 function App() {
     return (
@@ -14,24 +15,14 @@ function App() {
                     </h1>                    
                 </Row>
                 <Row className="justify-content-center">
+                    <AddAppoinment />
+                </Row>
+                <Row className="justify-content-center">
                     <Col md="4">
                         <Search />
                     </Col>
                 </Row>
-                <Row>
-                    <Col md={3}>
-                        <h3>Hello, Bootstrap</h3>
-                    </Col>
-                    <Col md={3}>
-                        <h3>Hello, Bootstrap</h3>
-                    </Col>
-                    <Col md={3}>
-                        <h3>Hello, Bootstrap</h3>
-                    </Col>
-                    <Col md={3}>
-                        <h3>Hello, Bootstrap</h3>
-                    </Col>
-                </Row>
+                
             </Container>
         </div>
     );

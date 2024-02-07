@@ -1,11 +1,9 @@
 import { FormControl, InputGroup, DropdownButton, Dropdown } from "react-bootstrap";
 
-const Search = () => {
+const DropDown = () => {
     return (
         <>
-            <InputGroup className="mb-3">
-                <FormControl placeholder="Search" />
-                <DropdownButton
+            <DropdownButton
                     variant="info"
                     title="Dropdown">
                     <Dropdown.Item href="#">Action</Dropdown.Item>
@@ -13,7 +11,17 @@ const Search = () => {
                     <Dropdown.Item href="#">Something else here</Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item href="#">Separated link</Dropdown.Item>
-                </DropdownButton>
+            </DropdownButton>
+        </>
+    )
+}
+
+const Search = () => {
+    return (
+        <>
+            <InputGroup className="mb-3">
+                <FormControl placeholder="Search" />
+                <DropDown />
             </InputGroup>
         </>
     );
