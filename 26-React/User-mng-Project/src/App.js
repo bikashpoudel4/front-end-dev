@@ -2,6 +2,8 @@ import { BsFillCalendar2CheckFill } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
+import Search from "./components/Search";
+
 function App() {
     return (
         <div className="App">
@@ -9,10 +11,12 @@ function App() {
                 <Row>
                     <h1 className="text-center fw-light mt-3">
                         <BsFillCalendar2CheckFill /> Appointments
-                    </h1>
-                    <div className="d-grid gap-2">
-                        <Button size="sm">Hello World</Button>
-                    </div>
+                    </h1>                    
+                </Row>
+                <Row className="justify-content-center">
+                    <Col md="4">
+                        <Search />
+                    </Col>
                 </Row>
                 <Row>
                     <Col md={3}>
