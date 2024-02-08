@@ -4,10 +4,24 @@ import { Col, Container, Row, Card, ListGroup } from "react-bootstrap";
 
 import Search from "./components/Search";
 import AddAppoinment from "./components/AddAppoinment";
-import appoinmentList from "./data.json";
 import AppoinmentInfo from "./components/AppoinmentInfo"
+import { useCallback, useEffect, useState } from "react";
 
 function App() {
+
+    let [appoinmentList, setAppointmentList] = useState([]);
+    const fetchData = useCallback(() => {
+        fetch('./data.json')
+        .then(response => response.json())
+        .then(data => {
+            setAppointmentList(data)
+        })
+    }, [])
+
+    useEffect(() => {
+        fetchData()
+    }, [fetchData])
+
     return (
         <div className="App">
             <Container>
@@ -30,7 +44,12 @@ function App() {
                             <Card.Header>Appoinments</Card.Header>
                             <ListGroup variant="flush">
                                 {appoinmentList.map(appoinment => (
-                                    <AppoinmentInfo key={appoinment.id} appoinment={appoinment} />
+                                    <AppoinmentInfo key={appoinment.id} appoinment={appoinment} 
+                                    onDeleteAppointment={
+                                        appointmentId => setAppointmentList(appoinmentList.filter(
+                                            appoinment => appoinment.id !== appointmentId
+                                        ))
+                                    } />
                                 ))}
                             </ListGroup>
                         </Card>
