@@ -16,7 +16,7 @@ function App() {
 
     const filteredAppointments = appoinmentList.filter(
         item => {
-            return(
+            return (
                 item.firstName.toLowerCase().includes(query.toLocaleLowerCase()) ||
                 item.lastName.toLowerCase().includes(query.toLocaleLowerCase()) ||
                 item.aptNotes.toLowerCase().includes(query.toLocaleLowerCase())
@@ -31,10 +31,10 @@ function App() {
 
     const fetchData = useCallback(() => {
         fetch('./data.json')
-        .then(response => response.json())
-        .then(data => {
-            setAppointmentList(data)
-        })
+            .then(response => response.json())
+            .then(data => {
+                setAppointmentList(data)
+            })
     }, [])
 
     useEffect(() => {
@@ -47,21 +47,23 @@ function App() {
                 <Row>
                     <h1 className="text-center fw-light mt-3">
                         <BsFillCalendar2CheckFill /> Appointments
-                    </h1>                    
+                    </h1>
                 </Row>
                 <Row className="justify-content-center">
-                    <AddAppoinment />
+                    <AddAppoinment 
+                        onSendAppointment={myAppontment => setAppointmentList([...appoinmentList, myAppontment])} 
+                        lastId={appoinmentList.reduce((max, item) => Number(item.id) > max ? Number(item.id): max, 0)} />
                 </Row>
                 <Row className="justify-content-center">
                     <Col md="4">
-                        <Search 
-                            query={query} 
+                        <Search
+                            query={query}
                             onQueryChange={myQuery => setQuery(myQuery)}
                             orderBy={orderBy}
                             onOrderByChange={mySort => setOrderBy(mySort)}
                             sortBy={sortBy}
                             onSortByChange={mySort => setSortBy(mySort)}
-                            />
+                        />
                     </Col>
                 </Row>
                 <Row className="justify-content-center">
@@ -70,18 +72,18 @@ function App() {
                             <Card.Header>Appoinments</Card.Header>
                             <ListGroup variant="flush">
                                 {filteredAppointments.map(appoinment => (
-                                    <AppoinmentInfo key={appoinment.id} appoinment={appoinment} 
-                                    onDeleteAppointment={
-                                        appointmentId => setAppointmentList(appoinmentList.filter(
-                                            appoinment => appoinment.id !== appointmentId
-                                        ))
-                                    } />
+                                    <AppoinmentInfo key={appoinment.id} appoinment={appoinment}
+                                        onDeleteAppointment={
+                                            appointmentId => setAppointmentList(appoinmentList.filter(
+                                                appoinment => appoinment.id !== appointmentId
+                                            ))
+                                        } />
                                 ))}
                             </ListGroup>
                         </Card>
                     </Col>
                 </Row>
-                
+
             </Container>
         </div>
     );
